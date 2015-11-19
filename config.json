@@ -1,0 +1,19 @@
+{
+  "locals": {
+    "url": "http://localhost:8080",
+    "name": "The Art of André Castelo",
+    "owner": "André Castelo"
+  },
+  "plugins": [
+    "wintersmith-nunjucks"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  }
+}

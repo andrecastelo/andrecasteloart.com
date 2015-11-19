@@ -1,0 +1,293 @@
+﻿/*
+Theme Name: Portfolio Project 2
+Theme URI: http://www.andrecastelo.com/
+Description: Theme developed to suit my needs of image display and blogging.
+Author: andrecastelo
+Author URI: http://www.andrecastelo.com/
+Version: 1.0
+Tags: minimalist, white, one-column, fixed-width
+
+License:
+License URI:
+
+*/
+
+/**
+ *      Fonts
+ */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300);
+* { font-family: 'Open Sans', sans-serif; }
+h1, h2, h3 { font-weight: 800; }
+h4, h5, h6 { font-weight: 700; }
+.light { font-weight: 300; }
+
+
+
+
+img { border: 0; }
+p { margin-top: 1em; margin-bottom: 1em; }
+a,
+.menubar ul li a,
+a.redlink { color: #000; text-decoration: none; }
+.relative { position: relative; }
+
+.email .redlink { font-size: 12px; }
+
+h2 a.redlink { color: inherit; }
+
+a { transition: all .1s linear; }
+a:hover { text-decoration: none; }
+
+a:hover,
+.menubar ul li a:hover,
+a.redlink:hover { color: #f00; }
+
+.top-line { border-top: #000 solid 1px; }
+.bottom-line { border-bottom: #000 solid 1px; }
+
+.content img { margin-top: 10px; margin-bottom: 10px; padding: 9px; border: 1px solid #ddd; }
+.content a img:hover { border: 1px solid #000; }
+
+.content a img.alignright { float:right; margin-left: 10px; }
+.content a img.alignnone { margin: 10px 0; }
+.content a img.alignleft { float:left; margin-right: 10px; }
+.content a img.aligncenter { margin-left: auto; margin-right: auto }
+
+h4 {
+	display: block;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-size: 1em;
+	font-weight: bold;
+	color: #333;
+}
+
+
+.align-right { text-align: right; }
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #666;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+p { color: #666; font-size: 12px; }
+
+#main { background-color: #fff; padding: 0;}
+
+
+/************/
+/** HEADER **/
+/************/
+
+@media screen and (max-width: 767px) {
+    #header h1 img { margin: 0 auto; }
+    .header-link { border: 0; }
+    .header-link-wrapper { display: block; text-align: center; }
+}
+@media screen and (min-width: 768px) {
+    .header-link:first-child { border-right: 1px solid #333; }
+    .header-link:last-child { border-left: 1px solid #333; }
+    .header-link {
+        padding: 0 10px;
+    }
+    .header-link-wrapper {
+        display: block;
+        text-align: right;
+        margin-top: 40px;
+    }
+}
+
+
+#header h1 { letter-spacing: -0.1em; margin-bottom: 5px; }
+
+/**************/
+/** MENU BAR **/
+/**************/
+
+.menubar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+.menubar ul li {
+    display: block;
+    text-align: center;
+}
+.menubar ul li a {
+    display: block;
+    padding: 10px;
+    width: 100%;
+
+}
+
+@media screen and (min-width: 768px) {
+    .menubar ul li {
+        display: inline-block;
+        padding: 2px;
+        margin-right: 10px;
+    }
+}
+
+
+/*************/
+/** CONTENT **/
+/*************/
+
+.post { margin-top: 40px; }
+.post h2:first-child { margin: 0 0 10px 0; padding: 0; color: #333; font-weight: bold; font-size: 30px; position: relative; top: 10px; letter-spacing: -1px; }
+.post h2 { margin: 0 0 10px 0; padding: 0; color: #444; font-weight: bold; font-size: 20px; letter-spacing: -1px; }
+.post h3 { margin: 0 0 10px 0; padding: 0; color: #555; font-weight: bold; font-size: 16px; letter-spacing: -1px; }
+
+
+ul.post-info { list-style-type: none; margin: 0 0 20px 0; padding: 0; }
+ul.post-info li { display: inline; font-size: 12px; color: #666; font-style: italic; }
+
+.content { margin-top: 10px; }
+
+.navigation { margin-top: 50px; }
+
+/* Comments ==================================================================*/
+
+#comments ul.comment-list li.comment-list { border-top: 1px solid #666; padding-top: 10px; }
+#comments ul.comment-list li h4.comment-author { font-size: 2.0em; margin-bottom: 0; }
+
+#comments ul {
+	list-style-type: none;
+	list-style-position: inside;
+	margin: 0;
+	padding: 0;
+}
+
+.comment-info { }
+.comment-info img {
+	float: right;
+	margin-left: 10px;
+	margin-top: 0;
+}
+
+.comment-info .comment-author { font-size: 0.8em; }
+.comment-info p.commentDate,
+.comment-info p.editLink,
+.comment-info p.editLink a { margin: 0; padding: 0; }
+
+.comment-info p.editLink { position: relative; right: 5px; }
+
+.comment-form {
+	border-top: 1px solid black;
+	margin-top: 10px;
+	padding-top: 10px;
+}
+textarea { width: 458px; }
+
+/* Portfolio ==================================================================*/
+
+@media screen and (max-width: 767px) {
+    #portfolio img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+#portfolio img { width: 100%; }
+
+/* Footer =====================================================================*/
+
+.copyright,
+.dashboard-links {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .copyright {
+        padding: 0;
+        width: 50%;
+        float: left;
+        text-align: left;
+    }
+    .dashboard-links {
+        padding: 0;
+        width: 50%;
+        float: left;
+        text-align: right;
+    }
+}
+
+
+
+#footer { margin-top: 40px; }
+
+
+/* WP tags */
+
+.alignnone { margin: 10px 0; }
+
+.aligncenter,
+div.aligncenter { display:block;  margin: 10px auto; }
+.alignright     { float:right;    margin: 5px 0 10px 10px; }
+.alignleft      { float:left;     margin: 5px 10px 10px 0; }
+.aligncenter    { display: block; margin: 5px auto 5px auto; }
+
+
+
+.content .wp-caption {
+    transition: all .2s linear;
+    background: #fff;
+    border: 1px solid #ddd;
+    max-width: 100%;
+    padding: 10px;
+    text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.content .wp-caption:hover {
+	border: 1px solid #666;
+    box-shadow: 0 0 3px #aaa;
+}
+
+.content .wp-caption.alignnone {
+    margin: 10px 0;
+}
+
+.content .wp-caption.alignleft {
+    margin: 5px 10px 10px 0;
+}
+
+.content .wp-caption.alignright {
+    margin: 5px 0 10px 10px;
+}
+
+.content img {
+    height: auto !important;
+    max-width: 100%;
+    display: block;
+}
+
+.content .wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    height: auto !important;
+    padding:0;
+    width: auto;
+}
+
+.content .wp-caption img:hover {
+	border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size:11px;
+    line-height:17px;
+    margin:10px;
+    padding:0;
+}
