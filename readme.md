@@ -1,4 +1,3 @@
+# My portfolio
 
-# Blog
-
-The default [wintersmith](https://github.com/jnordberg/wintersmith) template
+Basic personal blog/portfolio site using Wintersmith, because fuck wordpress.
