@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        {% block title %}
+            {{ locals.name }}
+        {% endblock %}
+    </title>
+</head>
+<body>
+    Nunjucks layout.
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
