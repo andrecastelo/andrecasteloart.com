@@ -2,7 +2,10 @@
   "locals": {
     "url": "http://localhost:8080",
     "name": "The Art of André Castelo",
-    "owner": "André Castelo"
+    "owner": "André Castelo",
+    "facebook": "https://www.facebook.com/andrecasteloillustration",
+    "twitter": "http://twitter.com/andrecastelo",
+    "email": "andrecastelo@gmail.com"
   },
   "plugins": [
     "wintersmith-nunjucks"

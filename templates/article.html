@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block page_id %}blog{% endblock %}
+
+{% block body %}
+<div class="row">
+    <div class="col-md-6 col-md-offset-3 col-sm-12 col-sm-offset-0 col-xs-10 col-xs-offset-1 content">
+        <div class="post entry">
+            <h2>
+                <a href="{{ page.url }}" class="redlink">
+                    {{ page.title }}
+                </a>
+            </h2>
+            <ul class="post-info">
+                <li>{{ moment.utc(page.date).format('MMMM Do YYYY') }}</li>
+            </ul>
+            {{ page.html | safe }}
+        </div>
+    </div>
+</div>
+{% endblock %}
