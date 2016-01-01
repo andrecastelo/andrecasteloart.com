@@ -1,7 +1,7 @@
 ---
 title: Portfolio
 date: 2015-11-17
-template: index.jade
+template: index.html
 ---
 
 <div class="post entry portfolio">
